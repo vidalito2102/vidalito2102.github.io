@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Vidal — Analista de Datos. Excel, SQL, Python y Power BI.">
+  <title>Vidal | Analista de Datos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress"></div>
+
+  <header class="nav">
+    <a class="brand" href="#inicio">VIDAL<span>.</span></a>
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="nav-cta" href="#proyectos">Ver proyectos</a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow">PORTAFOLIO · DATA ANALYTICS</p>
+        <h1>Hola, soy <span>Vidal.</span><br>Analista de Datos.</h1>
+        <p class="hero-text">
+          Transformo datos en información útil para entender problemas de negocio,
+          descubrir oportunidades y apoyar la toma de decisiones.
+        </p>
+        <div class="hero-buttons">
+          <a class="button primary" href="#proyectos">Explorar proyectos <span>↗</span></a>
+          <a class="button secondary" href="#contacto">Contactarme</a>
+        </div>
+        <div class="tool-line">
+          <span>Excel</span><i>•</i><span>SQL</span><i>•</i><span>Python</span><i>•</i><span>Power BI</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="photo-frame">
+          <img src="assets/perfil.jpg" alt="Fotografía de Vidal" onerror="this.style.display='none';this.nextElementSibling.style.display='grid';">
+          <div class="photo-placeholder">
+            <strong>V</strong>
+            <span>Agrega tu foto en<br><code>assets/perfil.jpg</code></span>
+          </div>
+        </div>
+        <div class="floating-card top">DATA<br><strong>DRIVEN</strong></div>
+        <div class="floating-card bottom"><span>⌁</span> De datos a decisiones</div>
+      </div>
+    </section>
+
+    <section class="section about" id="sobre-mi">
+      <div class="section-label">01 / SOBRE MÍ</div>
+      <div class="about-grid">
+        <div>
+          <h2>Experiencia de negocio.<br><span>Formación en datos.</span></h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            Soy Analista de Datos con experiencia en el sector transporte y formación
+            especializada en análisis de datos. He trabajado con información operativa,
+            indicadores y dashboards para apoyar decisiones y detectar oportunidades de mejora.
+          </p>
+          <p>
+            Actualmente estoy construyendo mi portafolio profesional y buscando una
+            oportunidad como Analista de Datos Jr., donde pueda combinar mi experiencia
+            de negocio con herramientas de análisis y visualización.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills" id="habilidades">
+      <div class="section-label">02 / HABILIDADES</div>
+      <div class="section-heading">
+        <h2>Mi stack<br><span>de análisis.</span></h2>
+        <p>Herramientas que utilizo para pasar de datos sin procesar a información accionable.</p>
+      </div>
+      <div class="skill-grid">
+        <article class="skill-card featured">
+          <div class="skill-number">01</div>
+          <h3>Excel</h3>
+          <p>Limpieza, transformación, análisis, KPIs y dashboards interactivos.</p>
+          <div class="skill-tags"><span>Dashboards</span><span>KPIs</span><span>Power Query</span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-number">02</div>
+          <h3>SQL</h3>
+          <p>Consultas, agregaciones, filtros, joins y transformación de información.</p>
+          <div class="skill-tags"><span>Queries</span><span>JOINs</span><span>Aggregations</span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-number">03</div>
+          <h3>Python</h3>
+          <p>Análisis exploratorio y estadístico utilizando herramientas del ecosistema Python.</p>
+          <div class="skill-tags"><span>Pandas</span><span>NumPy</span><span>EDA</span></div>
+        </article>
+        <article class="skill-card">
+          <div class="skill-number">04</div>
+          <h3>Power BI</h3>
+          <p>Modelado, indicadores y visualizaciones para comunicar hallazgos.</p>
+          <div class="skill-tags"><span>Dashboards</span><span>Visualización</span><span>KPIs</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects" id="proyectos">
+      <div class="section-label">03 / PROYECTOS</div>
+      <div class="section-heading project-heading">
+        <h2>Proyectos que<br><span>cuentan una historia.</span></h2>
+        <p>Cada proyecto sigue una lógica de negocio: contexto → problema → análisis → insights → recomendaciones.</p>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card">
+          <div class="project-visual transport">
+            <span>01</span>
+            <div class="chart-lines"><b></b><b></b><b></b><b></b><b></b></div>
+            <div class="visual-label">TRANSPORTE</div>
+          </div>
+          <div class="project-info">
+            <p class="project-type">ANÁLISIS OPERATIVO</p>
+            <h3>Sector Transporte</h3>
+            <p>Análisis de información operativa para identificar indicadores, patrones y oportunidades relacionadas con costos y desempeño.</p>
+            <div class="project-tools"><span>Excel</span><span>Power BI</span></div>
+            <a href="#" class="project-link">Ver proyecto <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="project-card reverse">
+          <div class="project-visual sales">
+            <span>02</span>
+            <div class="bars"><b></b><b></b><b></b><b></b><b></b></div>
+            <div class="visual-label">VENTAS</div>
+          </div>
+          <div class="project-info">
+            <p class="project-type">ANÁLISIS COMERCIAL</p>
+            <h3>Análisis de Ventas</h3>
+            <p>Exploración de ventas por región, productos y categorías para detectar tendencias y oportunidades comerciales.</p>
+            <div class="project-tools"><span>SQL</span><span>Python</span><span>Power BI</span></div>
+            <a href="#" class="project-link">Ver proyecto <span>→</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-visual hr">
+            <span>03</span>
+            <div class="donut"></div>
+            <div class="visual-label">PEOPLE ANALYTICS</div>
+          </div>
+          <div class="project-info">
+            <p class="project-type">RECURSOS HUMANOS</p>
+            <h3>Análisis de Empleados</h3>
+            <p>Exploración de ingresos, antigüedad, departamentos y compensaciones para encontrar patrones relevantes.</p>
+            <div class="project-tools"><span>SQL</span><span>Python</span><span>Power BI</span></div>
+            <a href="#" class="project-link">Ver proyecto <span>→</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section process">
+      <div class="section-label">04 / METODOLOGÍA</div>
+      <div class="process-head">
+        <h2>Del problema<br><span>a la decisión.</span></h2>
+      </div>
+      <div class="process-grid">
+        <div><b>01</b><strong>Problema</strong><p>Entender la pregunta de negocio.</p></div>
+        <div><b>02</b><strong>Datos</strong><p>Identificar fuentes y variables.</p></div>
+        <div><b>03</b><strong>Limpieza</strong><p>Preparar datos confiables.</p></div>
+        <div><b>04</b><strong>Análisis</strong><p>Buscar patrones y relaciones.</p></div>
+        <div><b>05</b><strong>Insights</strong><p>Convertir resultados en hallazgos.</p></div>
+        <div><b>06</b><strong>Recomendaciones</strong><p>Traducir evidencia en acciones.</p></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="contact-inner">
+        <p class="eyebrow">¿HABLAMOS?</p>
+        <h2>Construyamos algo<br><span>con datos.</span></h2>
+        <p>Estoy abierto a oportunidades, proyectos y conversaciones relacionadas con análisis de datos.</p>
+        <div class="contact-buttons">
+          <a class="button primary" href="mailto:ing.vidaldelangel21@gmail.com">Enviar correo ↗</a>
+          <a class="button secondary light" href="https://www.linkedin.com/in/vidal-delangel-dataanalyst" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="button secondary light" href="https://github.com/vidalito2102" target="_blank" rel="noopener">GitHub ↗</a>
+          <a class="button secondary light" href="tel:+525529073387">Tel. 55 2907 3387</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>VIDAL · ANALISTA DE DATOS</span>
+    <span>© 2026</span>
+  </footer>
+
+  <script>
+    const progress = document.querySelector('.progress');
+    window.addEventListener('scroll', () => {
+      const h = document.documentElement;
+      const scrolled = h.scrollTop / (h.scrollHeight - h.clientHeight) * 100;
+      progress.style.width = scrolled + '%';
+    });
+  </script>
+</body>
+</html>
