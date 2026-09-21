@@ -118,3 +118,23 @@ footer{background:var(--dark);color:#737e75;border-top:1px solid #28322c;display
   .about-stat strong{margin:0;font-size:25px}
   .about-focus{padding:18px}
 }
+
+/* Ajustes finales — sección Sobre mí */
+.tools-stat strong {
+  font-size: clamp(1rem, 1.35vw, 1.28rem);
+  line-height: 1.25;
+}
+
+@media (min-width: 900px) {
+  .about-copy p {
+    margin-bottom: 1rem;
+  }
+
+  .about-stats {
+    margin-top: 1.25rem;
+  }
+
+  .about-focus {
+    margin-top: 1.25rem;
+  }
+}
