@@ -113,3 +113,237 @@ footer{background:var(--dark);color:#737e75;border-top:1px solid #28322c;display
 .project-link{display:inline-flex;align-items:center;width:max-content;padding:10px 0}
 .project-link:hover{opacity:.65}
 @media(max-width:600px){.project-image,.project-image img{min-height:230px}.project-image img{object-fit:contain}}
+/* =========================================================
+   AJUSTES RESPONSIVE - PORTAFOLIO
+   ========================================================= */
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+
+    .container {
+        width: min(100% - 40px, 1200px);
+        margin-inline: auto;
+    }
+
+    .hero,
+    .about-grid,
+    .skills-header,
+    .projects-header {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        gap: 50px;
+    }
+
+    .hero-copy,
+    .hero-visual,
+    .about-copy,
+    .about-content {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .hero-title {
+        font-size: clamp(3rem, 10vw, 5rem);
+        line-height: 0.95;
+    }
+
+    .hero-actions {
+        flex-wrap: wrap;
+    }
+
+    .project-card {
+        grid-template-columns: 1fr;
+    }
+
+    .project-media,
+    .project-content {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .project-media img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+    }
+}
+
+
+/* Teléfonos */
+@media (max-width: 600px) {
+
+    .container {
+        width: calc(100% - 32px);
+        margin-inline: auto;
+    }
+
+    section {
+        overflow: hidden;
+    }
+
+    /* Navegación */
+    .nav-links {
+        display: none;
+    }
+
+    /* Hero */
+    .hero {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    .hero-copy {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .hero-title {
+        font-size: clamp(2.8rem, 14vw, 4rem);
+        line-height: 0.95;
+        letter-spacing: -0.04em;
+        overflow-wrap: normal;
+    }
+
+    .hero-description {
+        width: 100%;
+        max-width: none;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .hero-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        width: 100%;
+    }
+
+    .hero-actions a {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero-tools {
+        flex-wrap: wrap;
+    }
+
+    .hero-visual {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .hero-visual img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Experiencia */
+    .about-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .about-grid > * {
+        width: 100%;
+        min-width: 0;
+    }
+
+    /* Habilidades */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Proyectos */
+    .projects-header {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .projects-title {
+        font-size: clamp(2.5rem, 12vw, 3.5rem);
+        line-height: 1;
+        overflow-wrap: normal;
+    }
+
+    .project-card,
+    .project-card.reverse {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .project-card.reverse .project-media,
+    .project-card.reverse .project-content {
+        order: initial;
+    }
+
+    .project-media {
+        width: 100%;
+        min-height: auto;
+        overflow: hidden;
+    }
+
+    .project-media img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: none;
+        object-fit: contain;
+    }
+
+    .project-content {
+        width: 100%;
+        min-width: 0;
+        padding: 28px 22px;
+        box-sizing: border-box;
+    }
+
+    .project-content h3 {
+        font-size: 1.8rem;
+        line-height: 1.05;
+        overflow-wrap: break-word;
+    }
+
+    /* Metodología */
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contacto */
+    .contact-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .contact-actions a {
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+        justify-content: center;
+    }
+}
